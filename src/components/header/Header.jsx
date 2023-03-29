@@ -3,7 +3,7 @@ import Logo  from './../../images/Logo.svg';
 import React from 'react';
 
 const Header = () => {
-    console.log(3)
+    // console.log(3)
     return (
         <div className='header'>
             <div className="header_logo"><img src={Logo} alt="" /></div>

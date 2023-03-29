@@ -1,0 +1,31 @@
+.product{
+    /* border: 1px solid red; */
+    border-radius: 10px 10px 0 0;
+    margin: 30px 10px;
+    /* padding: 10px; */
+    background: #fff;
+    position: relative;
+}
+.product p{
+    padding-left: 15px;
+}
+.product img{
+    padding: 15px;
+    
+}
+
+.img_product{
+    width: 100%;
+}
+.name_product{
+    text-transform: capitalize;
+}
+.btn_product{
+    width: 100%;
+    position: absolute;
+    bottom: -35px;
+    padding: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
