@@ -16,7 +16,7 @@ const Product = ({product, addToCardHander}) => {
             <p className=''>{name}</p>
             <p>Price : ${price}</p>
             <p>Rating : {ratings}</p>
-            <button className='btn_product' onClick={()=>{clichHandlr(name)}}>Add to card</button>
+            <button className='btn_product' onClick={()=>{clichHandlr(product)}}>Add to card</button>
         </div>
     );
 };

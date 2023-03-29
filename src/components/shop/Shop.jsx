@@ -6,6 +6,7 @@ import './Shop.css'
 const Shop = () => {
 
     let [products, setProducts] = useState([]);
+    let [card, setCard] = useState([]);
 
     useEffect(()=>{
         fetch('products.json')
@@ -13,14 +14,15 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[])
 
-    const addToCardHander = (clickedData) =>{
-        console.log(clickedData);
+    const addToCardHander = (product) =>{
+        setCard([...card, product])
     }
+        // console.log(card);
 
     return (
         <div className='shop'>
             <Products products={products} addToCardHander={addToCardHander}></Products>
-            <Card></Card>
+            <Card card={card}></Card>
         </div>
     );
 };
