@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Poducts and Card/Card';
 import Products from './Poducts and Card/Products';
-import './Shop.css'
+import './Shop.css';
+
 
 const Shop = () => {
 
